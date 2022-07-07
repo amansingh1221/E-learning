@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+body{
+    background: #faf9f7;
+}
+.container1{
+    display: flex;
+}
+nav{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #fad79e;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+.logo .fa-laptop-code{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.logo span{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    color: rgb(51, 47, 47);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+}
+nav .fas{
+    position: relative;
+    width: 76px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top:12px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.hov:hover{
+    color: rgb(51, 47, 47);
+    background: rgb(145, 141, 141);
+}
+.mar{
+    margin-top: 3rem;
+}
+
+
+
+
+
+.main{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+.main-top{
+    display: flex;
+    width: 100%;
+}
+.main-top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(110,109,109);
+    cursor: pointer;
+}
+.main-skills{
+    display: flex;
+    margin-top: 20px;
+}
+.main-skills .card{
+    width: 25%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+.main-skills .card h3{
+    margin: 10px;
+    text-transform: capitalize;
+}
+.main-skills .card p{
+    font-size: 12px;
+}
+.main-skills .card button{
+    background-color: orangered;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.main-skills .card button:hover{
+    background: rgba(223,70,15,0.856);
+}
+.main-skills .card i{
+    font-size: 22px;
+    padding: 10px;
+}
+
+
+
+/* student */
+.table-menu{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    left: 21rem;
+    font-size: 1.5rem; 
+    text-align: center;
+}
+.table-menu table{
+    border: .1rem gray solid;
+}
+.table-menu table tr{
+    border: .1rem gray solid;
+
+}
+.table-menu table td{
+    border: .1rem gray solid;
+
+}
+.table-menu table tr th{
+    border: .1rem gray solid;
+    padding: 0 2rem;
+    background: rgb(198, 220, 243);
+
+}
+.active{
+    background:rgb(168, 167, 167);;
+}
+
+/* courses */
+.cont{
+    position: relative;
+    left: 19rem;
+    width: 50%; 
+}
+.con{
+    width:100%;
+    position: relative;
+    top: .2rem;
+    left: 9rem;
+    border: 0.3rem rgb(238, 167, 34) solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+.con .img{
+    justify-content: center;
+    max-width: 100%;
+    max-height: 30%;
+    width: 100%;
+    height: 15rem;
+}
+.con .img img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    padding:0 0 1rem 0;
+    border-bottom: 0.1rem gray solid;
+    object-fit: contain;
+}
+.con .desc{
+    text-align: justify;
+}
+.con .desc a{
+    width: 100%;
+    font-size: 1.2rem;
+    color: rgb(197, 51, 51);
+}
+.con .desc h2{
+    font-size: 1.5rem;
+    color: black;
+}
+.con .desc a:hover{
+    color: rgb(247, 34, 6);
+}
+.con .desc p{
+    font-size: 1.2rem;
+}
+
+
+
+
+/* Add course */
+.add{
+    text-align: center;
+    width: 40%;
+    height: 40%;
+    position: relative;
+    top: 5rem;
+    left: 21rem;
+    border: .2rem rgb(7, 151, 139) solid;
+    border-radius: .5rem;
+}
+.add h1{
+    border-bottom: .2rem rgb(7, 151, 139) solid;
+    border-radius: .1rem;
+}
+.add form{
+    padding: 1rem;
+}
+.add form span{
+    font-size: 1.5rem;
+    margin-bottom: .10rem;
+}
+.add form .in{
+    width: 70%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: .1rem rgb(7, 151, 139) solid;
+    border-radius: .5rem;
+    background: rgb(255, 255, 255);
+    padding: .3rem;
+}
+.add form .de{
+    width: 70%;
+    height: 5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: .1rem rgb(7, 151, 139) solid;
+    border-radius: .5rem;
+    background: rgb(255, 255, 255);
+}
+.add form .ch{
+    width: 38%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: .1rem rgb(7, 151, 139) solid;
+    border-radius: .5rem;
+    background: rgb(255, 255, 255);
+}
+.add form .ch:hover{
+   cursor: pointer;
+}
+.add form .btn{
+    width: 50%;
+    height: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    background: rgb(7, 151, 139);
+    color: rgb(6, 3, 14);
+}
+.add form .btn:hover{
+    background: rgb(250, 207, 66);
+    cursor: pointer;
+}
+
+
+/* Adminpage_home */
+.adminhome{
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+    width: 60%;
+    border: .5rem #fad79e solid;
+}
+.adminhome table tr .div1{
+    width: 10rem;
+    height: 5rem;
+    border: .5rem #fad79e solid;
+    background: yellowgreen;
+}
+.adminhome table tr .div2{
+    width: 10%;
+    height: 5rem;
+    border: .5rem #fad79e solid;
+}

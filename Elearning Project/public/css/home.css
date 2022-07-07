@@ -1,0 +1,443 @@
+:root{
+    --gradient:linear-gradient(90deg,#f1c40f,#f39c12);
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .4s linear;
+}
+*::selection{
+    background: #f39c12;
+    color: white;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/* html::-webkit-scrollbar{
+    width: 1.5rem;
+} */
+html::-webkit-scrollbar-track{
+    background: lightgray;
+}
+html::-webkit-scrollbar-thumb{
+    background:gray;
+}
+/* body{
+    height: 300rem;
+} */
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1.5rem 7%;
+    background: var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
+}
+header .logo{
+    color: #fff;
+    font-size: 2.5rem;
+}
+header .navbar1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header .navbar1 ul li{
+    margin:0 1rem;
+}
+header .navbar1 ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+header .navbar1 ul li a.active,
+header .navbar1 ul li a:hover{
+    color: #444;
+}
+
+header #login{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+header #login:hover{
+    color: #444;
+}
+
+header #menuj{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    float: left;
+}
+
+
+.login-form{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: -220%;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form form{
+    width: 35rem;
+    background: #fff;
+    margin: 0 2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem #333;
+    position: relative;
+}
+.login-form form h3{
+    font-size: 3rem;
+    color: #f39c12;
+    padding: 1rem 0;
+}
+.login-form form .box{
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid #666;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: none;
+}
+.login-form form .box::placeholder{
+    text-transform: capitalize;
+}
+.login-form form .box:focus{
+    border-color: #f39c12;
+}
+/* .login-form form .box:nth-child(3){
+    margin-bottom: 5rem;
+} */
+.login-form form p{
+    font-size: 1.4rem;
+    color: #666;
+    padding: .5rem 0;
+}
+.login-form form p a{
+    color: #f39c12;
+}
+.btnoo{
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--gradient);
+    border-radius: 4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.btnoo:hover::before{
+    transition: .3s linear;
+    left: 120%;
+}
+.btnoo::before{
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -100%;
+    background: #fff9;
+    height: 150%;
+    width: 20%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+.login-form form .btnoo{
+    width: 100%;
+    margin: 2rem 0;
+}
+.login-form form .btnoo:hover{
+    background: #444;
+}
+.login-form form .fa-times{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #999;
+}
+.login-form form .fa-times:hover{
+    color: #444;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url('/image/home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem 7%;
+    padding-top: 2rem;
+}
+.home h1{
+    font-size: 6rem;
+    color: rgb(136, 17, 17);
+
+}
+.home p{
+    font-size: 1.9rem;
+    color: rgb(131, 124, 124);
+    padding: 1rem 0;
+    width: 70rem;
+    
+}
+
+.home .shape{
+    position: absolute;
+    bottom: -.2rem;
+    left: 0;
+    height: 15rem;
+    width: 100%;
+}
+.registration-form{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: -220%;
+    left: 0;
+    z-index: 1000;
+    background:rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration-form form{
+    width: 35rem;
+    background: #fff;
+    margin: 0 2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem #333;
+    position: relative;
+}
+.registration-form form h3{
+    font-size: 3rem;
+    color: #f39c12;
+    padding: 1rem 0;
+}
+.registration-form form .box{
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid #666;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: none;
+}
+.registration-form form .box::placeholder{
+    text-transform: capitalize;
+}
+.registration-form form .box:focus{
+    border-color: #f39c12;
+}
+/* .registration-form form .box:nth-child(6){
+    margin-bottom: 5rem;
+} */
+.registration-form form .btn{
+    width: 100%;
+    margin: 2rem 0;
+}
+.registration-form form .btn:hover{
+    background: #444;
+}
+.registration-form form .fa-times{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #999;
+}
+.registration-form form .fa-times:hover{
+    color: #444;
+}
+.reg{
+    color: #f39c12;
+    font-size: 1.4rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.change-password{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: -220%;
+    left: 0;
+    z-index: 1000;
+    background:rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change-password form{
+    width: 35rem;
+    background: #fff;
+    margin: 0 2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem #333;
+    position: relative;
+}
+.change-password form h3{
+    font-size: 2rem;
+    color: #f39c12;
+    padding: 1rem 0;
+}
+.change-password form .box{
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid #666;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: none;
+}
+.change-password form .box::placeholder{
+    text-transform: capitalize;
+}
+.change-password form .box:focus{
+    border-color: #f39c12;
+}
+/* .change-password form .box:nth-child(6){
+    margin-bottom: 5rem;
+} */
+.change-password form .btn{
+    width: 100%;
+    margin: 2rem 0;
+}
+.change-password form .btn:hover{
+    background: #444;
+}
+.change-password form .fa-times{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #999;
+}
+.change-password form .fa-times:hover{
+    color: #444;
+}
+.navbar1 .current{
+    color:#444;;
+}
+
+
+
+
+
+
+
+.popup{
+    top:0;
+}
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+
+    header #menuj{
+        display: block;
+    }
+
+    header .navbar1{
+        position: fixed;
+        top:-120%;
+        left:0;
+        width: 100%;
+        background: #444;
+    }
+    header .navbar1 ul{
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar1 ul li{
+        margin:1.5rem 0;
+        text-align: center;
+        width: 100%;
+    }
+    header .navbar1 ul li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+    header .navbar1 ul li a.active,
+    header .navbar1 ul li a:hover{
+        color: #f39c12;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .navbar1.nav-toggle{
+        top: 6.4rem;
+    }
+    .home h1{
+        font-size: 4rem;
+    }
+    .home p{
+        width: auto;
+    }
+
+}
+@media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+.ma{
+    margin-left: 5rem;
+    margin-top: 4rem;
+    border: .3rem #f39c12 solid;
+    border-radius: 0 2.5rem 0 2.5rem;
+}
+
+
+.pd {
+    margin-top: 5rem;
+}
+
+.fixxx{
+    overflow: hidden;
+}
+
+#mess {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

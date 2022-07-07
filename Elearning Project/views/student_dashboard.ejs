@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn2Earn</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+        integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="student_dashboard.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet" />
+
+        <style>
+            .hov:hover{
+                background: rgb(200, 128, 11);
+            }
+        </style>
+</head>
+
+<body>
+    <!--Navigation Bar -->
+    <header style="height: 6.5rem;">
+        <a href="#" class="logo1" style="text-decoration: none;"><i class="fas fa-laptop-code"></i>Learn2Earn</a>
+        <h1 style="font-size: 4rem; color: rgb(89, 86, 86);margin-left: 0;">Welcome</h1>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                <div style="padding-bottom: .1rem;" id="login1" class="fa-solid fa-circle-user"></div><h1 style="float: left;padding-right: 1rem;"><%=mass%></h1>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="font-size: 2rem;">
+              <button class="dropdown-item hov" type="button">My Profile</button>
+              <button class="dropdown-item hov" type="button">My Courses</button>
+              <button class="dropdown-item hov" type="button">Edit Profile</button>
+              <button class="dropdown-item hov" type="button">Logout</button>
+            </div>
+          </div>
+        
+    </header>
+
+
+    <div class="container justify-content-center" style="position: relative;left: 200px;">
+        <div class="row">
+            <div class="col-md-8" style="border-radius: 10rem;">
+                <form action="/find" method="post" enctype="multipart/form-data">
+                <div class="input-group mb-3">
+                   
+                       <input style="height: 6.3rem;width: 20rem;border-radius: 2rem 0 0 2rem;font-size: 3rem;"
+                            type="text" name="sea" class="form-control input-text" placeholder="Search Courses...."
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append"> <button type="submit"
+                                style="border-radius:0 2rem 2rem 0;background: #f8c146;color:white;"
+                                class="btn btn-outline-warning btn-lg" type="button"><i style="font-size: 4rem;"
+                                    class="fa fa-search"></i></button>
+                        
+                                </form>        </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: relative;left: 7rem;" class="row pd">
+        <% for (var i=0; i <result.length; i++ ) { %>
+            <br />
+            <div class="card ma" style="width: 40rem; height: 50rem;">
+                <% var str="uploads/" +result[i].course_image;%>
+                    <img style="width: 100%; height: 25rem;" class="card-img-top" src="<%=str%>" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 style="font-size: 2.3rem;" class="card-title"><b>
+                                <%=result[i].course_name%>(<%=result[i].course_id%>)
+                            </b></h5>
+                        <p style="font-size: 2rem;" class="card-text">
+                            <%=result[i].course_desc%>
+                        </p>
+                        <a style="width: 20rem; height: 4rem;margin-left: 2rem;font-size: 2rem;position: absolute;top: 44rem;"
+                            href="#" class="btn btn-primary">Enroll</a>
+                    </div>
+            </div>
+            <% } %>
+    </div>
+    <!-- <script>
+        if ( window.history.replaceState ) {
+     window.history.replaceState( null, null, window.location.href );
+   }
+   </script> -->
+</body>
+
+</html>

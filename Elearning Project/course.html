@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Page</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/course.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!--Navigation Bar -->
+    <header>
+
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><i class="fas fa-laptop-code"></i>Learn2Earn</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a class="active" href="course.html">Course</a></li>
+                <li><a href="#Teacher">Teacher</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="login" class="fa-solid fa-circle-user"></div>
+
+    </header>
+
+
+    <!-- Login Form -->
+    <div class="login-form">
+        <form action="">
+            <h3>login</h3>
+            <input type="email" placeholder="username" class="box" required>
+            <input type="password" placeholder="password" class="box" required>
+            <p>forget password? <a onclick="somefunction2()" href="#">click here</a></p>
+            <p>don't have an account? <a onclick="somefunction1()" href="#">Register Here</a></p>
+            <input type="submit" class="btn" value="login">
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="registration-form">
+        <form onsubmit="validate()" action="">
+            <h3>Register</h3>
+            <input type="name" placeholder="Name" class="box" required>
+            <input type="contact" placeholder="Contact Number" class="box" required>
+            <input type="username" placeholder="Username" class="box" required>
+            <input type="password" placeholder="Password" class="box" required>
+            <input type="password" placeholder="Confirm Password" class="box" required>
+            <input type="submit" class="btn" value="Submit">
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+
+    <!-- Change Password -->
+    <div class="change-password">
+        <form action="">
+            <h3>Change Password</h3>
+            <input type="username" placeholder="Username" class="box" required>
+            <input type="contact" placeholder="Contact Number" class="box" required>
+            <input type="studentid" placeholder="Student Id" class="box" required>
+            <input type="password" placeholder="New Password" class="box" required>
+            <input type="password" placeholder="Confirm New Password" class="box" required>
+            <input type="submit" class="btn" value="Change">
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+
+    <!-- Course page -->
+    <section class="course" id="course">
+        <h1 class="heading">Our Popular Courses</h1>
+        <div class="container">
+            <div class="box">
+                <img src="img/Java1.png" alt="JAVA">
+                <span class="amount"><i class="fa-solid fa-indian-rupee-sign"></i>999</span>
+
+                <a href="#" class="title">Become a Java Developer</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet,
+                    magni aliquid, doloremque sint modi eum at, ut fuga provident quae perferendis?
+                </p>
+                <div class="info">
+                    <p><i class="far fa-clock"></i> 9 hours</p>
+                    <p><i class="far fa-calender-alt"></i> 12 months</p>
+                    <p><i class="far fa-book"></i> 20 modules</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="amount"><i class="fa-solid fa-indian-rupee-sign"></i>999</span>
+                <img src="img/C++.png" alt="C++">
+                <h3>Become a C++ Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet,
+                    magni aliquid, doloremque sint modi eum at, ut fuga provident quae perferendis?
+                </p>
+                <a href="#" class="btn">Show Details</a>
+                <div class="icons">
+                    <p><i class="far fa-clock"></i> 9 hours</p>
+                    <p><i class="far fa-calender"></i> 12 months</p>
+                    <p><i class="far fa-clock"></i> 20 modules</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="amount"><i class="fa-solid fa-indian-rupee-sign"></i>999</span>
+                <img src="img/python.png" alt="Python">
+                <h3>Become a Python Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet,
+                    magni aliquid, doloremque sint modi eum at, ut fuga provident quae perferendis?
+                </p>
+                <a href="#" class="btn">Show Details</a>
+                <div class="icons">
+                    <p><i class="far fa-clock"></i> 9 hours</p>
+                    <p><i class="far fa-calender"></i> 12 months</p>
+                    <p><i class="far fa-clock"></i> 20 modules</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="amount"><i class="fa-solid fa-indian-rupee-sign"></i>999</span>
+                <img src="img/dbms1.png" alt="DBMS">
+                <h3>Become a Databse Engineer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet,
+                    magni aliquid, doloremque sint modi eum at, ut fuga provident quae perferendis?
+                </p>
+                <a href="#" class="btn">Show Details</a>
+                <div class="icons">
+                    <p><i class="far fa-clock"></i> 9 hours</p>
+                    <p><i class="far fa-calender"></i> 12 months</p>
+                    <p><i class="far fa-clock"></i> 20 modules</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="amount"><i class="fa-solid fa-indian-rupee-sign"></i>999</span>
+                <img src="img/os1.png" alt="Operating System">
+                <h3>Operating System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet,
+                    magni aliquid, doloremque sint modi eum at, ut fuga provident quae perferendis?
+                </p>
+                <a href="#" class="btn">Show Details</a>
+                <div class="icons">
+                    <p><i class="far fa-clock"></i> 9 hours</p>
+                    <p><i class="far fa-calender"></i> 12 months</p>
+                    <p><i class="far fa-clock"></i> 20 modules</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="amount"><i class="fa-solid fa-indian-rupee-sign"></i>999</span>
+                <img src="img/ml1.png" alt="Machine Learning">
+                <h3>Machine Learning</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet,
+                    magni aliquid, doloremque sint modi eum at, ut fuga provident quae perferendis?
+                </p>
+                <a href="#" class="btn">Show Details</a>
+                <div class="icons">
+                    <p><i class="far fa-clock"></i> 9 hours</p>
+                    <p><i class="far fa-calendar"></i> 12 months</p>
+                    <p><i class="fa-solid fa-book-open"></i> 20 modules</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/home.js"></script>
+
+
+</body>
+
+</html>

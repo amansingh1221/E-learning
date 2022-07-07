@@ -1,0 +1,85 @@
+:root{
+    --gradient:linear-gradient(90deg,#f1c40f,#f39c12);
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .4s linear;
+}
+*::selection{
+    background: #f39c12;
+    color: white;
+}
+html{
+    font-size: 62.5%;
+}
+html::-webkit-scrollbar{
+    width: 1.5rem;
+}
+html::-webkit-scrollbar-track{
+    background: rgb(104, 102, 102);
+}
+html::-webkit-scrollbar-thumb{
+    background:linear-gradient(#f1c40f,#f39c12)
+}
+body{
+    background: #c4d5f8;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1.5rem 7%;
+    background: var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
+}
+header .logo1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+header #login1{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+header #login1:hover{
+    color: #444;
+}
+
+.container {
+    margin-top: 160px
+}
+
+.btn:hover {
+   background: #906103 !important;
+}
+
+.input-text:focus {
+    box-shadow: 0px 0px 0px;
+    border-color: #f8c146;
+    outline: 0px
+}
+
+.form-control {
+    border: 2px solid #f8c146;
+}
+.ma{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border: .3rem #f39c12 solid;
+    border-radius: 0 0 0 4rem;
+}

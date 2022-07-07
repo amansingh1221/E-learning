@@ -1,0 +1,9 @@
+body{
+    overflow-x: hidden;
+}
+.ma{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border: .3rem #f39c12 solid;
+    border-radius: 0 2.5rem 0 2.5rem;
+}

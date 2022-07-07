@@ -1,0 +1,120 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn2Earn</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/home.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body >
+    <!--Navigation Bar -->
+    <header>
+        <div id="menuj" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><i class="fas fa-laptop-code"></i>Learn2Earn</a>
+
+        <nav class="navbar1">
+            <ul>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="/course">Course</a></li>
+                <li><a href="#Teacher">Teacher</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="login" class="fa-solid fa-circle-user"></div>
+    </header>
+    <div class="login-form"  > 
+        <form action="/login" method="post">
+           
+            <h3>login</h3>
+            <%  if(successl != ' '){%>
+                <div class="alert alert-success">
+                    <strong><h1><%= successl %></h1></strong>
+                </div>
+    
+             <% } %>
+            <input type="text" name="username" placeholder="username" class="box" required />
+            <input type="password" name="password" placeholder="password" class="box" required />
+            <p>
+                forget password? <a onclick="somefunction2()" href="#">click here</a>
+            </p>
+            <p>
+                don't have an account?
+                <a onclick="somefunction1()" href="#">Register Here</a>
+            </p>
+            <input type="submit" class="btnoo" value="login" />
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+    <!-- Change Password -->
+<div class="change-password">
+    <form action="/fp" method="post">
+        <h3>Change Password</h3>
+        <%  if(successr != ' '){%>
+            <div class="alert alert-success">
+                <strong><h1><%= successr %></h1></strong>
+            </div>
+
+         <% } %>
+         <input type="text" placeholder="Username" name="username" class="box" required />
+         <input type="number" placeholder="Contact Number" name="contactnumber" length="10" class="box" required />
+         <input type="number" placeholder="Student Id" name="studentid" class="box" required />
+         <input type="password" placeholder="New Password" name="password" class="box" required />
+         <input type="password" placeholder="Confirm New Password" name="confirmpassword" class="box" required />
+        <input type="submit" class="btnoo" value="Change" />
+        <i class="fas fa-times"></i>
+    </form>
+</div>
+    <div class="registration-form popup">
+        <form onsubmit="validate()" action="/register" method="post">
+            <h3>Register</h3>
+            <%  if(successr != ' '){%>
+                <div class="alert alert-success">
+                    <strong><h1 id="mess"><%= successr %></h1></strong>
+                </div>
+    
+             <% } %>
+            <input type="text" placeholder="Name" name="name" class="box" required />
+            <input type="number" placeholder="Contact Number" name="contactnumber" class="box" required  length="10"  />
+            <input type="text" placeholder="Username" name="username" class="box" required />
+            <input type="password" placeholder="Password" name="password" class="box" required />
+            <input type="password" placeholder="Confirm Password" name="confirmpassword" class="box" required  />
+            <input type="submit" class="btnoo" value="Submit" />
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+    <section class="home">
+   
+        <h1>Learn2Earn</h1>
+        <p>
+            We provide you 100+ india's top rated course taught by experienced
+            faculty
+        </p>
+      
+        <a onclick="somefunction3()"><button class="btnoo">Get Started</button></a>
+    
+        <div class="shape"></div>
+    </section>
+    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- JS -->
+    <script src="js/home.js"></script>
+    </body>
+    
+    </html>    

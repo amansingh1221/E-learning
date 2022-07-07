@@ -1,0 +1,53 @@
+.course{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.course .box{
+    height: 42rem;
+    width: 50rem;
+    flex: 1 1 30rem;
+    border-radius: 1rem;
+    border: .7rem solid #f7ac35;
+    padding: 1rem;
+}
+.course .box img{
+    height: 20rem;
+    width: 100%;
+}
+.course .box .amount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    background: var(--pink);
+    color: #fff;
+    border-radius: .5rem;
+
+}
+.course .box h3{
+    color: var(--pink);
+    font-size: 2.5rem;
+}
+.course .box p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+.course .icons{
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-top: 1rem;
+}
+.course .icons p{
+    color: #666;
+    font-size: 1.3rem;
+}
+.course .icons p i{
+    padding-right: .4rem;
+    color: var(--pink);
+}

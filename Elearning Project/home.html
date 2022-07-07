@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn2Earn</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!--Navigation Bar -->
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><i class="fas fa-laptop-code"></i>Learn2Earn</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="#Teacher">Teacher</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="login" class="fa-solid fa-circle-user"></div>
+    </header>
+
+    <!-- Login Form -->
+    <div class="login-form">
+        <form action="">
+            <h3>login</h3>
+            <input type="email" placeholder="username" class="box" required />
+            <input type="password" placeholder="password" class="box" required />
+            <p>
+                forget password? <a onclick="somefunction2()" href="#">click here</a>
+            </p>
+            <p>
+                don't have an account?
+                <a onclick="somefunction1()" href="#">Register Here</a>
+            </p>
+            <input type="submit" class="btn" value="login" />
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="registration-form">
+        <form onsubmit="validate()" action="">
+            <h3>Register</h3>
+            <input type="name" placeholder="Name" class="box" required />
+            <input type="contact" placeholder="Contact Number" class="box" required />
+            <input type="username" placeholder="Username" class="box" required />
+            <input type="password" placeholder="Password" class="box" required />
+            <input type="password" placeholder="Confirm Password" class="box" required />
+            <input type="submit" class="btn" value="Submit" />
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+
+    <!-- Change Password -->
+    <div class="change-password">
+        <form action="">
+            <h3>Change Password</h3>
+            <input type="username" placeholder="Username" class="box" required />
+            <input type="contact" placeholder="Contact Number" class="box" required />
+            <input type="studentid" placeholder="Student Id" class="box" required />
+            <input type="password" placeholder="New Password" class="box" required />
+            <input type="password" placeholder="Confirm New Password" class="box" required />
+            <input type="submit" class="btn" value="Change" />
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home">
+        <h1>Learn2Earn</h1>
+        <p>
+            We provide you 100+ india's top rated course taught by experienced
+            faculty
+        </p>
+        <a onclick="somefunction3()"><button class="btn">Get Started</button></a>
+
+        <div class="shape"></div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/home.js"></script>
+</body>
+
+</html>
